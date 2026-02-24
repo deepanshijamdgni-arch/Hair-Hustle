@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products — Hair Hustle</title>
+    <meta name="description"
+        content="Shop Hair Hustle's premium natural hair care collection — oils, creams, serums, extensions, and styling products." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+        .product-card {
+            transition: all 0.3s ease;
+        }
+
+        .add-cart-btn {
+            width: 100%;
+            margin-top: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-logo">Hair<span>Hustle</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html" class="active">Products</a></li>
+                <li><a href="testimonial.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileClose">&times;</button>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Products</a>
+        <a href="testimonial.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <span class="section-label" style="color:var(--beige)">Our Collection</span>
+        <h1>Premium Hair Care</h1>
+        <p>Every product crafted to nourish, protect, and celebrate your crown.</p>
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> <span>›</span> <span>Products</span>
+        </div>
+    </header>
+
+    <!-- PRODUCT SECTION -->
+    <section style="background:var(--cream)">
+        <div class="container">
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="oils">Oils</button>
+                <button class="filter-btn" data-filter="styling">Styling</button>
+                <button class="filter-btn" data-filter="extensions">Extensions</button>
+                <button class="filter-btn" data-filter="scalp">Scalp Care</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="all-products-grid" id="productsGrid">
+
+                <!-- 1 -->
+                <div class="product-card reveal" data-category="oils" data-name="Argan Gold Hair Oil"
+                    data-price="$38.00"
+                    data-desc="A silky, lightweight blend of argan & rosehip oils that deeply nourishes and restores shine. Absorbs instantly with no greasy residue. Ideal for all hair types, especially 3C–4C textures.">
+                    <div class="product-card-image">
+                        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=600&q=80"
+                            alt="Argan Gold Hair Oil" loading="lazy" />
+                        <span class="product-badge">Best Seller</span>
+                    </div>
+                    <div class="product-card-body">
+                        <h4>Argan Gold Hair Oil</h4>
+                        <p>Deep nourishing argan &amp; rosehip blend for luminous, frizz-free shine.</p>
+                        <div class="product-card-footer">
+                            <span class="product-price">$38.00</span>
+                        </div>
+                        <button class="btn btn-primary add-cart-btn"
+                            onclick="event.stopPropagation();this.textContent='✓ Added!';setTimeout(()=>this.textContent='Add to Cart',2000)">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="product-card reveal reveal-delay-1" data-category="styling" data-name="Curl Define Cream"
+                    data-price="$29.00"
+                    data-desc="Rich shea butter & aloe vera cream that defines curls, eliminates frizz and locks in moisture all day. Non-flaking formula with a subtle fresh scent.">
+                    <div class="product-card-image">
+                        <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=600&q=80"
+                            alt="Curl Define Cream" loading="lazy" />
+                        <span class="product-badge">New</span>
+                    </div>
+                    <div class="product-card-body">
+                        <h4>Curl Define Cream</h4>
+                        <p>Shea &amp; aloe cream for defined, bouncy, frizz-free curls all day long.</p>
+                        <div class="product-card-footer">
+                            <span class="product-price">$29.00</span>
+                        </div>
+                        <button class="btn btn-primary add-cart-btn"
+                            onclick="event.stopPropagation();this.textContent='✓ Added!';setTimeout(()=>this.textContent='Add to Cart',2000)">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="product-card reveal reveal-delay-2" data-category="scalp" data-name="Scalp Revival Serum"
+                    data-price="$45.00"
+                    data-desc="A targeted scalp treatment with peppermint & biotin that promotes healthy growth, reduces flakiness, and restores balance. Apply 2–3 times weekly for best results.">
+                    <div class="product-card-image">
+                        <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=600&q=80"
+                            alt="Scalp Revival Serum" loading="lazy" />
+                        <span class="product-badge">Editor's Pick</span>
+                    </div>
+                    <div class="product-card-body">
+                        <h4>Scalp Revival Serum</h4>
+                        <p>Peppermint &amp; biotin serum that stimulates growth &amp; soothes irritation.</p>
+                        <div class="product-card-footer">
+                            <span class="product-price">$45.00</span>
+                        </div>
+                        <button class="btn btn-primary add-cart-btn"
+                            onclick="event.stopPropagation();this.textContent='✓ Added!';setTimeout(()=>this.textContent='Add to Cart',2000)">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="product-card reveal" data-category="oils" data-name="Castor Growth Oil" data-price="$32.00"
+                    data-desc="Black Jamaican castor oil infused with vitamin E, lavender, and neem. Thickens thin edges, reduces shedding, and promotes dense, healthy growth.">
+                    <div class="product-card-image">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80"
+                            alt="Castor Growth Oil" loading="lazy" />
+                    </div>
+                    <div class="product-card-body">
+                        <h4>Castor Growth Oil</h4>
+                        <p>JBCO blend with lavender &amp; neem to thicken edges and reduce shedding.</p>
+                        <div class="product-card-footer">
+                            <span class="product-price">$32.00</span>
+                        </div>
+                        <button class="btn btn-primary add-cart-btn"
+                            onclick="event.stopPropagation();this.textContent='✓ Added!';setTimeout(()=>this.textContent='Add to Cart',2000)">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="product-card reveal reveal-delay-1" data-category="extensions"
+                    data-name="Kinky Clip-Ins Set" data-price="$89.00"
+                    data-desc="100% human hair kinky clip-in extensions, 4B/4C texture. Heat-friendly, tangle-resistant, and blends seamlessly for a natural, voluminous look. 10-piece set.">
+                    <div class="product-card-image">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80"
+                            alt="Kinky Clip-Ins Set" loading="lazy" />
+                        <span class="product-badge">Premium</span>
+                    </div>
+                    <div class="product-card-body">
+                        <h4>Kinky Clip-Ins Set</h4>
+                        <p>100% human hair 4B/4C clip-ins for natural volume and length.</p>
+                        <div class="product-card-footer">
+                            <span class="product-price">$89.00</span>
+                        </div>
+                        <button class="btn btn-primary add-cart-btn"
+                            onclick="event.stopPropagation();this.textContent='✓ Added!';setTimeout(()=>this.textContent='Add to Cart',2000)">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="product-card reveal reveal-delay-2" data-category="styling" data-name="Twist & Set Butter"
+                    data-price="$26.00"
+                    data-desc="Mango & coconut butter styling product formulated for two-strand twists, braids, and protective styles. Provides hold, moisture, and a natural sheen without buildup.">
+                    <div class="product-card-image">
+                        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=600&q=80"
+                            alt="Twist & Set Butter" loading="lazy" />
+                    </div>
+                    <div class="product-card-body">
+                        <h4>Twist &amp; Set Butter</h4>
+                        <p>Mango &amp; coconut butter for defined twists, braids, and protective styles.</p>
+                        <div class="product-card-footer">
+                            <span class="product-price">$26.00</span>
+                        </div>
+                        <button class="btn btn-primary add-cart-btn"
+                            onclick="event.stopPropagation();this.textContent='✓ Added!';setTimeout(()=>this.textContent='Add to Cart',2000)">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="product-card reveal" data-category="scalp" data-name="Deep Cleanse Shampoo"
+                    data-price="$24.00"
+                    data-desc="Clarifying shampoo with apple cider vinegar and tea tree extract that removes buildup, balances scalp pH, and leaves hair feeling clean and refreshed — without stripping moisture.">
+                    <div class="product-card-image">
+                        <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&q=80"
+                            alt="Deep Cleanse Shampoo" loading="lazy" />
+                    </div>
+                    <div class="product-card-body">
+                        <h4>Deep Cleanse Shampoo</h4>
+                        <p>ACV &amp; tea tree clarifying shampoo — removes buildup without stripping moisture.</p>
+                        <div class="product-card-footer">
+                            <span class="product-price">$24.00</span>
+                        </div>
+                        <button class="btn btn-primary add-cart-btn"
+                            onclick="event.stopPropagation();this.textContent='✓ Added!';setTimeout(()=>this.textContent='Add to Cart',2000)">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="product-card reveal reveal-delay-1" data-category="extensions" data-name="Silk Closure Wig"
+                    data-price="$149.00"
+                    data-desc="Premium lace closure wig in 1B/30 ombre, 16 inches. 100% virgin Brazilian hair. Pre-plucked hairline, baby hairs included. Secure 3-comb + adjustable strap fit system.">
+                    <div class="product-card-image">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80"
+                            alt="Silk Closure Wig" loading="lazy" />
+                        <span class="product-badge">Luxury</span>
+                    </div>
+                    <div class="product-card-body">
+                        <h4>Silk Closure Wig</h4>
+                        <p>100% virgin Brazilian hair wig with pre-plucked lace for a flawless look.</p>
+                        <div class="product-card-footer">
+                            <span class="product-price">$149.00</span>
+                        </div>
+                        <button class="btn btn-primary add-cart-btn"
+                            onclick="event.stopPropagation();this.textContent='✓ Added!';setTimeout(()=>this.textContent='Add to Cart',2000)">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <!-- 9 -->
+                <div class="product-card reveal reveal-delay-2" data-category="styling" data-name="Edge Control Gel"
+                    data-price="$18.00"
+                    data-desc="Strong-hold edge control with aloe vera and hemp seed oil. Tames flyaways and lays edges without flaking or white residue. Long-lasting hold up to 48 hours.">
+                    <div class="product-card-image">
+                        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&q=80"
+                            alt="Edge Control Gel" loading="lazy" />
+                    </div>
+                    <div class="product-card-body">
+                        <h4>Edge Control Gel</h4>
+                        <p>Aloe &amp; hemp strong hold gel — no flake, no residue, 48-hour hold.</p>
+                        <div class="product-card-footer">
+                            <span class="product-price">$18.00</span>
+                        </div>
+                        <button class="btn btn-primary add-cart-btn"
+                            onclick="event.stopPropagation();this.textContent='✓ Added!';setTimeout(()=>this.textContent='Add to Cart',2000)">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+            </div><!-- /products grid -->
+        </div>
+    </section>
+
+    <!-- PRODUCT MODAL -->
+    <div class="modal-overlay" id="productModal" style="position:fixed">
+        <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+        <div class="modal">
+            <div class="modal-image">
+                <img id="modalImg" src="" alt="" />
+            </div>
+            <div class="modal-body">
+                <h3 id="modalName"></h3>
+                <div class="price" id="modalPrice"></div>
+                <p id="modalDesc"></p>
+                <div style="display:flex;gap:12px;margin-top:24px">
+                    <button class="btn btn-primary"
+                        onclick="this.textContent='✓ Added to Cart!';setTimeout(()=>this.textContent='Add to Cart',2000)">Add
+                        to Cart</button>
+                    <button class="btn btn-outline"
+                        onclick="document.getElementById('productModal').classList.remove('open');document.body.style.overflow=''">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">Hair<span>Hustle</span></a>
+                    <p>Where luxury meets nature. Premium hair care rooted in authenticity, crafted for every crown.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="testimonial.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Categories</h5>
+                    <ul>
+                        <li><a href="#">Hair Oils</a></li>
+                        <li><a href="#">Styling Creams</a></li>
+                        <li><a href="#">Scalp Serums</a></li>
+                        <li><a href="#">Extensions</a></li>
+                        <li><a href="#">Gift Sets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Get In Touch</h5>
+                    <ul>
+                        <li><a href="mailto:hello@hairhustle.com"><i class="far fa-envelope"
+                                    style="margin-right:8px;opacity:.6"></i>hello@hairhustle.com</a></li>
+                        <li><a href="tel:+12345678900"><i class="fas fa-phone"
+                                    style="margin-right:8px;opacity:.6"></i>+1 (234) 567-8900</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt" style="margin-right:8px;opacity:.6"></i>New
+                                York, NY 10001</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Hair Hustle. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Shipping &amp; Returns</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+
+</html>

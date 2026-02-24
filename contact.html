@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Hair Hustle</title>
+    <meta name="description"
+        content="Get in touch with Hair Hustle. We'd love to hear from you — questions, collaborations, wholesale, or just to say hi." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-logo">Hair<span>Hustle</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="testimonial.html">Testimonials</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileClose">&times;</button>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Products</a>
+        <a href="testimonial.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <span class="section-label" style="color:var(--beige)">Reach Out</span>
+        <h1>Let's Talk</h1>
+        <p>Questions, collaborations, or just want to say hi — we're here for it.</p>
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> <span>›</span> <span>Contact</span>
+        </div>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- LEFT: FORM -->
+                <div class="reveal">
+                    <span class="section-label">Send a Message</span>
+                    <h2 class="section-title" style="margin-bottom:32px">We'd Love to<br />Hear From You</h2>
+
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" placeholder="e.g. Amara Johnson"
+                                    autocomplete="name" />
+                                <span class="error-msg" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com"
+                                    autocomplete="email" />
+                                <span class="error-msg" id="emailError"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (234) 567-8900"
+                                autocomplete="tel" />
+                            <span class="error-msg" id="phoneError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject"
+                                placeholder="e.g. Wholesale Inquiry, Product Question..." />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message"
+                                placeholder="Tell us how we can help you..."></textarea>
+                            <span class="error-msg" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary"
+                            style="width:100%;justify-content:center;font-size:0.9rem">
+                            <i class="fas fa-paper-plane" style="margin-right:8px"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- RIGHT: INFO -->
+                <div class="reveal reveal-delay-2">
+                    <span class="section-label">Our Details</span>
+                    <h3 class="section-title" style="font-size:1.7rem;margin-bottom:32px">Get in Touch</h3>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt" style="color:var(--soft-brown)"></i>
+                        </div>
+                        <div>
+                            <h5>Visit Us</h5>
+                            <p>34 Crown Street, Suite 7<br />New York, NY 10001, USA</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-phone" style="color:var(--soft-brown)"></i></div>
+                        <div>
+                            <h5>Call Us</h5>
+                            <p><a href="tel:+12345678900" style="color:var(--charcoal)">+1 (234) 567-8900</a></p>
+                            <p style="font-size:0.8rem;color:var(--taupe)">Mon–Fri, 9am–6pm EST</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope" style="color:var(--soft-brown)"></i></div>
+                        <div>
+                            <h5>Email Us</h5>
+                            <p><a href="mailto:hello@hairhustle.com"
+                                    style="color:var(--charcoal)">hello@hairhustle.com</a></p>
+                            <p style="font-size:0.8rem;color:var(--taupe)">We reply within 24 hours</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fab fa-instagram" style="color:var(--soft-brown)"></i></div>
+                        <div>
+                            <h5>Follow Us</h5>
+                            <p>@hairhustle.official</p>
+                            <div style="display:flex;gap:10px;margin-top:10px">
+                                <a href="#" class="social-link"
+                                    style="width:36px;height:36px;border:1px solid var(--beige);color:var(--charcoal)"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link"
+                                    style="width:36px;height:36px;border:1px solid var(--beige);color:var(--charcoal)"><i
+                                        class="fab fa-tiktok"></i></a>
+                                <a href="#" class="social-link"
+                                    style="width:36px;height:36px;border:1px solid var(--beige);color:var(--charcoal)"><i
+                                        class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="map-placeholder">
+                        <iframe
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=-74.0100%2C40.7040%2C-73.9900%2C40.7140&layer=mapnik&marker=40.7090%2C-73.9980"
+                            title="Hair Hustle Location Map" allowfullscreen loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div><!-- /contact-grid -->
+        </div>
+    </section>
+
+    <!-- FAQ STRIP -->
+    <section style="background:var(--cream);padding:80px 0">
+        <div class="container" style="max-width:760px">
+            <div style="text-align:center;margin-bottom:48px">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Quick Answers</h2>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:16px">
+                <!-- FAQ items -->
+                <details
+                    style="background:var(--white);border-radius:var(--radius-md);padding:20px 24px;box-shadow:var(--shadow-soft);cursor:pointer">
+                    <summary
+                        style="font-weight:600;font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center">
+                        Do you ship internationally? <span style="color:var(--soft-brown)">+</span>
+                    </summary>
+                    <p style="margin-top:12px;font-size:0.9rem">Yes! We ship to 40+ countries worldwide. International
+                        shipping typically takes 7–14 business days. Free shipping on orders over $75.</p>
+                </details>
+                <details
+                    style="background:var(--white);border-radius:var(--radius-md);padding:20px 24px;box-shadow:var(--shadow-soft);cursor:pointer">
+                    <summary
+                        style="font-weight:600;font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center">
+                        Are your products safe for colour-treated hair? <span style="color:var(--soft-brown)">+</span>
+                    </summary>
+                    <p style="margin-top:12px;font-size:0.9rem">Absolutely. All Hair Hustle products are sulfate-free
+                        and colour-safe. They're formulated to nourish and protect without stripping colour.</p>
+                </details>
+                <details
+                    style="background:var(--white);border-radius:var(--radius-md);padding:20px 24px;box-shadow:var(--shadow-soft);cursor:pointer">
+                    <summary
+                        style="font-weight:600;font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center">
+                        What is your return policy? <span style="color:var(--soft-brown)">+</span>
+                    </summary>
+                    <p style="margin-top:12px;font-size:0.9rem">We offer a 30-day satisfaction guarantee. If you're not
+                        happy with your purchase, contact us and we'll make it right — exchange, refund, or store
+                        credit.</p>
+                </details>
+                <details
+                    style="background:var(--white);border-radius:var(--radius-md);padding:20px 24px;box-shadow:var(--shadow-soft);cursor:pointer">
+                    <summary
+                        style="font-weight:600;font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center">
+                        Do you offer wholesale or salon partnerships? <span style="color:var(--soft-brown)">+</span>
+                    </summary>
+                    <p style="margin-top:12px;font-size:0.9rem">Yes! We love partnering with salons, boutiques, and
+                        retailers. Send us an email at wholesale@hairhustle.com or use the form above to get started.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">Hair<span>Hustle</span></a>
+                    <p>Where luxury meets nature. Premium hair care rooted in authenticity, crafted for every crown.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="testimonial.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="product.html">Hair Oils</a></li>
+                        <li><a href="product.html">Styling Creams</a></li>
+                        <li><a href="product.html">Scalp Serums</a></li>
+                        <li><a href="product.html">Extensions</a></li>
+                        <li><a href="product.html">Gift Sets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Get In Touch</h5>
+                    <ul>
+                        <li><a href="mailto:hello@hairhustle.com"><i class="far fa-envelope"
+                                    style="margin-right:8px;opacity:.6"></i>hello@hairhustle.com</a></li>
+                        <li><a href="tel:+12345678900"><i class="fas fa-phone"
+                                    style="margin-right:8px;opacity:.6"></i>+1 (234) 567-8900</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt" style="margin-right:8px;opacity:.6"></i>New
+                                York, NY 10001</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Hair Hustle. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Shipping &amp; Returns</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Popup -->
+    <div class="success-popup" id="successPopup">
+        ✓ &nbsp; Your message has been sent! We'll be in touch within 24 hours.
+    </div>
+
+    <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+
+</html>
